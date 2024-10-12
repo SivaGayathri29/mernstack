@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            font-weight: 700;
+            color: #928f8f;
+            font-family: Open Sans, sans-serif;
+            font-size: .9rem;
+
+            position: relative;
+        }
+
+        .flex-container {
+            display: flex;
+            position: static;
+            padding-left: 30px;
+            flex-direction: row;
+            align-items: center;
+            height: 70px;
+            background-color: white;
+            gap: 3%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .btn {
+            font-weight: bold;
+            background-color: white;
+            padding: 0px 16px;
+            color: #0071bd;
+            font-family: sans-serif;
+            border: none;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #3f51b5;
+            color: white;
+
+
+        }
+
+        .img {
+            float: left;
+
+        }
+
+        .h1 {
+
+            font-size: 2.2vw;
+            margin-top: 6vh;
+            font-weight: 700;
+            line-height: 6vh;
+            font-family: Open Sans, sans-serif;
+            color: #364146;
+            margin: 20px;
+           margin-left: 420px;
+
+        }
+        p {
+            color: gray;
+            font-family: Open Sans, sans-serif;
+            margin: 10px;
+            margin-left:420px;
+           
+        }
+        label{
+            color: gray;
+            font-family: Open Sans, sans-serif;
+            margin: 10px;
+        }
+        .btn1{
+            color: #fff !important;
+            background-color: #0661a7;
+            margin-top: 200px !important ;
+            padding: 1rem 2rem;
+            font-size: 1.3vw;
+            font-weight: 500;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-left:20px;
+        }
+        .btn1:hover{
+            background-color: rgba(2, 2, 59, 0.87);
+            box-shadow: rgba(9, 4, 75, 0.2) 0px 2px 8px 0px;
+        }
+        h3{
+            color: gray;
+            font-family: Open Sans, sans-serif;
+            margin-right: 3% !important;
+            font-size: 1.2rem;
+            line-height: 2.5vh;
+
+            position: relative !important;
+            text-wrap: wrap;
+            padding-left:420px;
+        }
+        .container{
+        border-radius: 6px;
+            border: 1px solid rgba(128, 128, 128, 0.733);
+            
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            margin-left:1rem;
+            margin-right:1rem;
+        }
+        .paragraph{
+            text-align: center;
+            
+        }
+        .verify{
+            width: max-content;
+            padding: .3rem 2rem;
+            border-radius: 4px !important;
+            border: 1px solid #0071bd;
+            background-color: #0071bd;
+            color: #fff;
+        }
+        .verify:hover{
+            background-color: rgb(25, 25, 97);
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+
+    const header = document.createElement("div");
+    body.appendChild(header);
+    const div = document.createElement("div");
+    header.appendChild(div);
+    const img = document.createElement("img");
+    img.src = "bytesplash.png";
+    img.style.width = "185px";
+    img.style.height = "33px";
+    div.appendChild(img);
+    const p = document.createElement("h1");
+    p.innerHTML = "Training and Placement Center";
+    div.appendChild(p);
+    p.className = "content";
+    header.className = "flex-container";
+    const btn1 = document.createElement("btn");
+    btn1.innerHTML = "Home";
+    header.appendChild(btn1);
+    const btn2 = document.createElement("btn");
+    btn2.innerHTML = "Courses";
+    header.appendChild(btn2);
+    const btn3 = document.createElement("btn");
+    btn3.innerHTML = "Contact";
+    header.appendChild(btn3);
+    const btn4 = document.createElement("btn");
+    btn4.innerHTML = "+91 8660803099";
+    header.appendChild(btn4);
+    const btn5 = document.createElement("btn");
+    btn5.innerHTML = "enquires@bytesplash.in";
+    header.appendChild(btn5);
+    btn1.className = "btn";
+    btn2.className = "btn";
+    btn3.className = "btn";
+    btn4.className = "btn";
+    btn5.className = "btn";
+    const image = document.createElement("img");
+    image.src = "Designer-discuss.png";
+    image.style.width = "400px";
+    image.style.height = "400px";
+    body.appendChild(image);
+    image.className = "img";
+    const heading = document.createElement("h1");
+    heading.innerHTML = "The Best Software Training And Placement Institute In Marathahalli, Bengaluru";
+    body.appendChild(heading);
+    heading.className = "h1";
+    
+    const para = document.createElement("p");
+    para.innerHTML = "All Courses Included with the Student Dahsboard wth the Byte Splash LMS, Learning Management System for the students as the dashboard for the courses and its assigments and daily class recordings."
+    body.appendChild(para);
+    const line5=document.createElement("br");
+    body.appendChild(line5);
+    const line9=document.createElement("br");
+    body.appendChild(line9);
+    const btn6=document.createElement("btn");
+    btn6.innerHTML="Get Started";
+    body.appendChild(btn6);
+    btn6.className="btn1";
+    btn6.classList.add("btn1:hover");
+    const h3=document.createElement("h3");
+    const line6=document.createElement("br");
+    body.appendChild(line6);
+    const line7=document.createElement("br");
+    body.appendChild(line7);
+    h3.innerHTML="Courses";
+    body.appendChild(h3);
+    const image1=document.createElement("img");
+    image1.src="courses-icons.png";
+    image1.style.width="900px";
+    image1.style.height="100px";
+    body.appendChild(image1)
+    const container=document.createElement("div");
+    body.appendChild(container);
+    container.className="container";
+    const paragraph=document.createElement("label");
+    paragraph.innerHTML="You can Verify the digital certificate Here ";
+    container.appendChild(paragraph);
+    paragraph.className="paragraph";
+    const verify=document.createElement("btn");
+    verify.innerHTML="Verify";
+    container.appendChild(verify);
+    verify.className="verify";
+
+
+
+
+
+</script>
+
+</html>

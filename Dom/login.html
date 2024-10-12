@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position:absolute;
+           
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid rgba(128, 128, 128, 0.466);
+            border-radius:6px;
+            padding:1rem;
+        }
+        h1{
+            text-align: center;
+        }
+        .custom-input{
+            background-color:rgba(0, 255, 255, 0.26);
+            font-size:medium;
+            margin:0.5rem;
+            border:none;
+            border-radius:6px;
+        }
+        .btn{
+            background-color:#0071bda1;
+            color:white;
+            border-radius:4px;
+            border:none;
+            padding:0.2rem 1.2rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+    const div = document.createElement("div");
+    body.appendChild(div);
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "Login";
+    div.appendChild(h1);
+    const line = document.createElement("br");
+    div.appendChild(line);
+    const emaillabel = document.createElement("label");
+    emaillabel.innerHTML = "Email:";
+    div.appendChild(emaillabel);
+    const line3=document.createElement("br");
+    div.appendChild(line3);
+    const input = document.createElement("input");
+    input.setAttribute("type", "email");
+    input.setAttribute("placeholder", "Enter Email");
+    div.appendChild(input);
+    const line1 = document.createElement("br");
+    div.appendChild(line1);
+    const line6=document.createElement("br");
+    div.appendChild(line6);
+    const passwordlabel = document.createElement("label");
+    passwordlabel.innerHTML = "Password:";
+    div.appendChild(passwordlabel);
+    const line4=document.createElement("br");
+    div.appendChild(line4);
+    const input1 = document.createElement("input");
+    input1.setAttribute("type", "password");
+    input1.setAttribute("placeholder", "Enter Password");
+    div.appendChild(input1);
+    const line2=document.createElement("br");
+    div.appendChild(line2);
+    const line5=document.createElement("br");
+    div.appendChild(line5);
+    const btn=document.createElement("button");
+    btn.innerHTML="Login";
+    div.appendChild(btn);
+    div.className="container";
+    input.className="custom-input";
+    input1.className="custom-input";
+    btn.className="btn";
+</script>
+
+</html>
