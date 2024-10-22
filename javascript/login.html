@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid grey;
+            padding:6px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const body=document.getElementsByTagName("body")[0];
+    var div=document.createElement("div");
+    body.appendChild(div);
+    var h1=document.createElement("h1");
+    h1.innerHTML="LOGIN PAGE";
+    div.append(h1);
+    const label1=document.createElement("label");
+    label1.innerHTML="Username:";
+    div.append(label1);
+    const input1=document.createElement("input");
+    input1.setAttribute("type","email");
+    input1.setAttribute("placeholder","enter email");
+
+    div.append(input1);
+    div.className="container";
+    input1.style.backgroundColor="blue";
+    const img=document.createElement("img");
+    img.src="../bytesplash.png";
+    img.style.width="40px";
+    img.style.height="60px";
+    div.append(img)
+
+</script>
+</html>
